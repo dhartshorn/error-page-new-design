@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- (1) Whitney Font -->
+  <link href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css" rel="stylesheet"><!-- (2) FED CSS -->
+  <link href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css" rel="stylesheet">
+  <link href="https://static.ctctcdn.com/h/fed-framework/2.0.0-73/fed.min.css" rel="stylesheet">
+  <link href="extra2.css" rel="stylesheet" type="text/css"><!-- (4) jQuery -->
+
+  <script src="https://static.ctctcdn.com/h/jquery/2.1.4/jquery.min.js">
+  </script><!-- (5) FED JavaScript -->
+
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0/fed.min.js">
+  </script><!-- SCRIPTS -->
+
+  <script src="https://static.ctctcdn.com/h/moment/2.11.2/moment.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed-folders.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed-typeahead.min.js">
+  </script>
+  <script src="public/prettify.js">
+  </script>
+  <script src="js/clipboard.min.js">
+  </script>
+  <script src="js/copyCode.js">
+  </script>
+  <script src="js/createCodepen.js">
+  </script>
+  <script src="js/lunr.min.js">
+  </script>
+  <script src="js/lunrSearch.js">
+  </script>
+  <script src="js/navigation.js">
+  </script>
+  <script src="js/folder-controller.js">
+  </script>
+  <script src="js/colorPicker-controller.js">
+  </script>
+  <script src="https://code.highcharts.com/highcharts.js">
+  </script>
+  <script src="https://code.highcharts.com/modules/exporting.js">
+  </script>
+  <meta charset="utf-8">
+  <title>Error Page</title>
+  <style>
+    .callouts-flex-custom {
+      align-items: stretch !important;
+    }
+    .callouts-flex-custom-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="error-bg2">
+  <!-- (3) FED Wrapper -->
+  <div class="fed-wrapper">
+    <!-- FAKE NAV -->
+<!--     <div  id="fakeNav">
+      <ul>
+        <li class="logoNav front">Home</li>
+        <li>Campaigns</li>
+        <li>Contacts</li>
+        <li>Trends</li>
+        <li>Sign-up Forms</li>
+        <li>Library</li>
+        <li>Social Posts</li>
+        <li>Integrations</li>
+      </ul>
+    </div> -->
+
+    <div class="foreground"></div>
+
+    <div class="midground">
+    </div>
+
+    <div class="background">
+    </div>
+    <div class="backgroundmoon">
+<!--       <div class="moon"></div>
+ -->    </div>
+
+    <div class="innerWrapper u-centerBlock u-paddingSidesDouble u-paddingEnds">
+
+
+
+      <div class="Layout u-marginBottomDouble">
+              
+
+
+              
+              <div class="Layout-col-12 b2-Layout-col-8 b3-Layout-col-6 u-marginBottomHalf front">
+                <div class="">
+                  <div class="Layout u-marginFlush ">
+                    <div class="Layout-col-12 u-padding">
+                      <div class="u-valignTop ">
+                        <a href="https://www.constantcontact.com/"><img class="page-logo u-marginTopDouble" src="img/ctct_logo_white_lg.svg"></a>
+                        <p class="u-fontSizeMega u-weightSemiBold u-marginFlush u-lineHeight1">You've encountered an error!</p>
+                        <p class="u-fontSizeXXLarge u-marginFlush">Sorry about that.</p>
+                        <p class="u-fontSizeLarge u-marginFlush u-paddingTopHalf">Go back to <a href="https://campaign-ui.constantcontact.com/campaign/dashboard">your dashboard</a> or search for help below.</p>
+                        <form class="Form u-paddingTopHalf">
+  						  <div class="Field-wrapper">
+  						    <span class="Field-icon Icon--search u-colorLightGray"></span>
+  						    <input type="text" id="text-input-icon"/>
+  						  </div>
+						</form>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+              
+<!--                <div class="Layout-col-12 b2-Layout-col-6 u-marginBottomHalf">
+                <div class=" ">
+                  <div class="Layout u-marginFlush">
+                    <div class="Layout-col-12 u-paddingFlush">
+                      <img class="doge-img u-verticalCenter-element " src="img/doge_computer_2.gif">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+
+
+    </div>
+
+
+
+
+  </div><!-- Initialize FED JS Component -->
+  <script>
+     //needed for when elements are cloned, events arent copied
+
+     function resetFED() {
+
+       $('.js-date-picker').fedDatePicker();
+       $('.js-date-range-picker').fedDateRangePicker();
+       $('.js-tooltip').fedTooltip();
+       $('.js-tab').fedTab();
+       $('.js-dialog').fedDialog({
+   title: 'Compare Campaigns',
+   clickPrimaryAction: function(e, data){
+     $(this).fedDialog('close');
+   }
+  });
+
+
+
+  
+
+
+
+
+     }
+     resetFED()
+  </script>
+</body>
+</html>
